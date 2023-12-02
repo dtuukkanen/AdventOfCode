@@ -12,11 +12,9 @@ def get_calibration_number(word):
 
 
 def trebuchet(words):
-    calibration_values = []
     calibration_value = 0
 
     for word in words:
-        calibration_values.append(get_calibration_number(word))
         calibration_value += get_calibration_number(word)
 
     return calibration_value
