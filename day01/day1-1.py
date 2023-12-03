@@ -11,7 +11,7 @@ def get_calibration_number(word):
     return int(first_digit + last_digit)
 
 
-def trebuchet(words):
+def count_sum(words):
     calibration_value = 0
 
     for word in words:
@@ -23,4 +23,4 @@ def trebuchet(words):
 if __name__ == "__main__":
     with open("input.txt") as input_file:
         words = input_file.readlines()
-    print(trebuchet(words))
+    print(count_sum(words))
