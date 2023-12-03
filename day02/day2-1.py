@@ -33,15 +33,6 @@ def result(lines):
                 all((MAX_AMOUNTS[color] >= amount for color, amount in amounts.items()))
             )
 
-            if (
-                amounts["red"] <= 12
-                and amounts["green"] <= 13
-                and amounts["blue"] <= 14
-            ):
-                game_possibilities.append(True)
-            else:
-                game_possibilities.append(False)
-
         if all(game_possibilities):
             result += int(game.split()[-1])
 
