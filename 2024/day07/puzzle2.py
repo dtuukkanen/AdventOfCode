@@ -17,8 +17,6 @@ def evaluate(result, values):
     return False
 
 
-
-
 def main():
     total = 0
     with open('input.txt') as f:
@@ -31,6 +29,7 @@ def main():
             if evaluate(result, values):
                 total += result
     print(total)
+
 
 if __name__ == '__main__':
     main()
