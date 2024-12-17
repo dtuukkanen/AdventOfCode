@@ -69,7 +69,7 @@ def find_operand(operand):
 def grow_i(index, output, target):
     for i in range(1, len(target) + 1):
         if output[-i] != target[-i]:
-            return index + 2 ** ((len(target) - i) * 3)
+            return index + 8 ** (len(target) - i)
     return index
 
 
@@ -77,8 +77,8 @@ def main():
     registers, program = read_input()
     target = program
 
-    start = 2 ** ((len(target) - 1) * 3)
-    end = 2 ** (len(target) * 3)
+    start = 8 ** ((len(target) - 1))
+    end = 8 ** (len(target))
 
     i = start
     while i < end:
