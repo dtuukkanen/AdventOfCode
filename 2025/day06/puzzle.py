@@ -95,5 +95,5 @@ def puzzle2():
 
 
 if __name__ == "__main__":
-    # puzzle1()
+    puzzle1()
     puzzle2()
